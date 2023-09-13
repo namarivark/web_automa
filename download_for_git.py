@@ -48,7 +48,7 @@ for url in managePageUrl:
 
     # download sequence
 
-    driver.get(managePageUrl[i])
+    driver.get(url)
 
     driver.implicitly_wait(10)
 
