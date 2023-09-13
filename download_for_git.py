@@ -12,10 +12,6 @@ skuName = []
 
 managePageUrl = []
 
-# variable decleration for while loop
-
-i = 0
-
 # chrome driver 
 
 chrome_options = Options()
@@ -48,7 +44,7 @@ driver.send_keys(Keys.ENTER)
 
 # execution loop
 
-while i < len(skuName):
+for url in managePageUrl:
 
     # download sequence
 
@@ -61,8 +57,6 @@ while i < len(skuName):
     driver.find_element().click()
 
     time.sleep(5)
-
-    i +=1
 
 print("download complete")
 
