@@ -14,10 +14,6 @@ managePageUrl = []
 
 fileLocation = []
 
-# variable decleration for while loop
-
-i = 0
-
 # chrome driver 
 
 chrome_options = Options()
@@ -50,7 +46,7 @@ driver.send_keys(Keys.ENTER)
 
 # execution loop
 
-while i < len(skuName):
+for i in range(len(skuName)):
     
     # upload sequence
 
@@ -67,8 +63,6 @@ while i < len(skuName):
     time.sleep(15)
     
     driver.find_element().submit()
-
-    i +=1
 
 print("upload complete")
 
